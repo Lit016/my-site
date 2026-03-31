@@ -4,4 +4,6 @@ title: Home
 ---
 
 <h1>Home</h1>
-<p>I am testing something now.</p>
+<a class="imglink" href="./translator">
+  <img src="./img/distranslator.svg" alt="Distranslator">
+</a>
