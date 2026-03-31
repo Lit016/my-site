@@ -113,7 +113,7 @@ custom_js: |
   <button class="sqbtn" title="Copy text" id="copytext" onclick="copy('#copytext', pos.value)">
     <i class="fa-regular fa-copy"></i>
   </button>
-  <button class="sqbtn" title="Copy URL" id="copyurl" onclick="copy('#copyurl', `https://lit016.github.io/litonet/translator?text=${btoa(pre.value).replaceAll('=', '')`)">
+  <button class="sqbtn" title="Copy URL" id="copyurl" onclick="copy('#copyurl', `https://lit016.github.io/litonet/translator?text=${btoa(pre.value).replaceAll('=', '')}`)">
     <i class="fa-solid fa-link"></i>
   </button>
 </div>
