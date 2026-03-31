@@ -1,2 +1,2 @@
-# my-site
-なんかいろいろ
+# Litonet
+*A dump of useless things.*
