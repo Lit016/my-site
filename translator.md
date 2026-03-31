@@ -110,10 +110,10 @@ custom_js: |
   <textarea id="pos" class="nor" style="width:45%;height:150px" placeholder="翻訳結果がここに" readonly></textarea>
 </div>
 <div class="c upm">
-  <button class="sqbtn" title="Copy text" id="copytext" onclick="copy('#copytext', pos.value)">
+  <button class="sqbtn" title="結果をコピー" id="copytext" onclick="copy('#copytext', pos.value)">
     <i class="fa-regular fa-copy"></i>
   </button>
-  <button class="sqbtn" title="Copy URL" id="copyurl" onclick="copy('#copyurl', `https://lit016.github.io/litonet/translator?text=${btoa(pre.value).replaceAll('=', '')}`)">
+  <button class="sqbtn" title="URLをコピー" id="copyurl" onclick="copy('#copyurl', `https://lit016.github.io/litonet/translator?text=${btoa(pre.value).replaceAll('=', '')}`)">
     <i class="fa-solid fa-link"></i>
   </button>
 </div>
@@ -121,6 +121,9 @@ custom_js: |
 <p>
   英語を（ものすごく大まかに）日本語の発音に変換するツールです。<br>
   決して英語を日本語に翻訳したり正確な発音に変換してくれたりする便利なツールではありません。
+</p>
+<p class="nom">
+  「URLをコピー」を使用すると、入力したテキストを表示できるURLをコピーします。
 </p>
 <h3>仕組み</h3>
 <p>
