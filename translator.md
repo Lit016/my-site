@@ -92,7 +92,7 @@ custom_js: |
       const q = new URLSearchParams(s)
       if (s.includes("text=") == true) {
         try {
-          pre.value = decodeURIComponent(q.get("text"))
+          pre.value = atob(q.get("text"))
           translate()
           console.log("読み込み成功")
         } catch (err) {
@@ -113,7 +113,7 @@ custom_js: |
   <button class="sqbtn" title="Copy text" id="copytext" onclick="copy('#copytext', pos.value)">
     <i class="fa-regular fa-copy"></i>
   </button>
-  <button class="sqbtn" title="Copy URL" id="copyurl" onclick="copy('#copyurl', `https://lit016.github.io/litonet/translator?text=${encodeURIComponent(pre.value)}`)">
+  <button class="sqbtn" title="Copy URL" id="copyurl" onclick="copy('#copyurl', `https://lit016.github.io/litonet/translator?text=${btoa(pre.value)}`)">
     <i class="fa-solid fa-link"></i>
   </button>
 </div>
