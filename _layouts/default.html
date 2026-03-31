@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>{{ page.title }} - Litonet</title>
+  <meta charset="utf-8">
+  <meta
+    name="description"
+    content="A dump of useless things.">
+  <link rel="icon" href="./img/favicon.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.1.0/css/all.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <a class="logo" href="./index.html">Litonet</a>
+    </div>
+    <div class="content">
+      {{ content }}
+    </div>
+    <div class="footer">
+      <a class="logo" href="./index">Litonet</a>
+      — <i>A dump of useless things.</i>
+      <hr>
+      <ul class="yoko">
+        <li><a title="GitHub" target="_blank" href="https://github.com/Lit016">GitHub</a></li>
+        <li><a title="Contact" href="./contact.html">Contact</a></li>
+        <li><span>&copy; 2026-Present</span></li>
+      </ul>
+    </div>
+    <button class="back2top" title="Back to top" onclick="location.href='#top'">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+  </div>
+  <script src="./main.js"></script>
+  {% if page.custom_js %}
+    {{ page.custom_js }}
+  {% endif %}
+</body>
+</html>
