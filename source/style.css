@@ -322,7 +322,7 @@ li {
 }
 .content {
   padding: 15px 50px;
-  min-height: calc(100vh - 210px);
+  min-height: calc(100vh - 225px);
 }
 .footer {
   padding: 15px;
