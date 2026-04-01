@@ -9,7 +9,7 @@ translation = {
   "ould": "uっど",
   /* 二重母音 */
   "ai": "ei",
-  "ee": "iー", "ea": "ia", "eu": "uー",
+  "ee": "iー", "eu": "uー",
   "oa": "oー", "oo": "uー",
   /* 二重子音 */
   "bb": "b", "dd": "d", "ff": "f", "gg": "g",
