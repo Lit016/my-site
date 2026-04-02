@@ -1,0 +1,13 @@
+# Jekyll trashes
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# I don't know is this important
+.sass-cache/
+.bundle/
+vendor/
+
+# OS Things
+.DS_Store
+Thumbs.db
