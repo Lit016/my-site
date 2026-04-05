@@ -6,9 +6,19 @@ desc: 今すぐクリック！
 
 <h1>引っかかったな！</h1>
 <div class="media">
-  <img src="./img/lol.gif" alt="Get Stick Bugged LOL" style="
-    object-fit: cover;
-    width: 300px;
-    height: 300px;">
+  <style>
+    img {
+      object-fit: cover;
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+  <img src="./img/lol.gif" alt="Get Stick Bugged LOL">
   <p>これは釣りリンクだよ。残念だったね。</p>
+</div>
+<div class="c">
+  <button class="sqbtn" title="URLをコピー" id="copyurl" onclick="copy(location.origin + location.pathname, '#copyurl')">
+    <i class="fa-solid fa-link"></i>
+  </button>
+  <span>URLをコピーして友達を引っ掛けよう！</span>
 </div>

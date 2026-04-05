@@ -6,16 +6,17 @@ custom_js: translator.js
 ---
 
 <h1>Distranslator</h1>
+<p>翻訳機もどき</p>
 <div class="flex c" style="gap:10px;">
   <textarea id="pre" class="nor" style="width:45%;height:150px" placeholder="Enter Text Here"></textarea>
   →
   <textarea id="pos" class="nor" style="width:45%;height:150px" placeholder="翻訳結果がここに" readonly></textarea>
 </div>
 <div class="c upm">
-  <button class="sqbtn" title="結果をコピー" id="copytext" onclick="copy('#copytext', pos.value)">
+  <button class="sqbtn" title="結果をコピー" id="copytext" onclick="copy(pos.value, '#copytext')">
     <i class="fa-regular fa-copy"></i>
   </button>
-  <button class="sqbtn" title="URLをコピー" id="copyurl" onclick="copy('#copyurl', `https://lit016.github.io/litonet/translator?text=${btoa(pre.value).replaceAll('=', '')}`)">
+  <button class="sqbtn" title="URLをコピー" id="copyurl" onclick="copy(location.origin + location.pathname + '?text=' + btoa(pre.value).replaceAll('=', ''), '#copyurl')">
     <i class="fa-solid fa-link"></i>
   </button>
 </div>

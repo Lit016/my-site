@@ -1,0 +1,80 @@
+---
+layout: default
+title: Placeholder
+desc: ここにテキストを入力
+custom_js: placeholder.js
+---
+
+<style>
+  .flex {
+    gap: 6px;
+    margin: 6px 0;
+  }
+  .flex.col {
+    flex-direction: column;
+    width: 50%;
+    margin: 0;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  #result {
+    margin-top: 6px;
+    padding: 8px;
+    border-radius: 10px;
+    border: solid 1px var(--color-gray);
+  }
+</style>
+<h1>Placeholder</h1>
+<p>ここにテキストを入力</p>
+<details open>
+  <summary>入力欄</summary>
+  <div class="flex">
+    <div class="flex col">
+      <input type="text" id="a">
+      <input type="text" id="b">
+      <input type="text" id="c">
+      <input type="text" id="d">
+      <input type="text" id="e">
+      <input type="text" id="f">
+      <input type="text" id="g">
+      <input type="text" id="h">
+      <input type="text" id="i">
+      <input type="text" id="j">
+      <input type="text" id="k">
+      <input type="text" id="l">
+      <input type="text" id="m">
+    </div>
+    <div class="flex col">
+      <input type="text" id="n">
+      <input type="text" id="o">
+      <input type="text" id="p">
+      <input type="text" id="q">
+      <input type="text" id="r">
+      <input type="text" id="s">
+      <input type="text" id="t">
+      <input type="text" id="u">
+      <input type="text" id="v">
+      <input type="text" id="w">
+      <input type="text" id="x">
+      <input type="text" id="y">
+      <input type="text" id="z">
+    </div>
+  </div>
+</details>
+<div class="c">
+  <select id="textType">
+    <option value="0">ある場所の文章 (A)</option>
+    <option value="1">ある動物の文章 (B)</option>
+    <option value="2">ある列車の文章 (C)</option>
+  </select>
+  <button onclick="showText()">送信</button>
+  <button onclick="resetForm()">リセット</button>
+</div>
+<p id="result" class="nom">
+  結果がここに表示されます。
+</p>
+<h2>Placeholderについて</h2>
+<p>好きな言葉を入力してめちゃくちゃな文章を作れます。</p>
+<p>何も入力しなくても空欄は勝手に埋まります。</p>
+<p>文章を変えるときはリセットしたほうがいいです。</p>

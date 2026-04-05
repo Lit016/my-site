@@ -131,13 +131,12 @@ input[type="color"] {
 input[type="color"]:hover {
   background-image: linear-gradient(var(--color-gray), var(--color-light-gray));
 }
-input[type="color"]:active {
+input[type="color"]:focus {
   background-image: linear-gradient(var(--color-light-gray), var(--color-gray));
 }
 
 textarea,
 input[type="text"],
-input[type="password"],
 input[type="number"],
 input[type="date"],
 input[type="datetime-local"],
@@ -151,7 +150,6 @@ input[type="week"] {
   padding: 6px 9px;
 }
 input[type="text"],
-input[type="password"],
 input[type="number"],
 input[type="date"],
 input[type="datetime-local"],
@@ -182,6 +180,56 @@ li {
   margin-bottom: 4px;
 }
 
+select, ::picker(select) {
+  appearance: base-select;
+}
+select {
+  cursor: pointer;
+  border: solid 2px var(--color-dark-gray);
+  background-color: var(--color-gray);
+  border-radius: 6px;
+  padding: 6px 9px;
+  font-size: 13.3333px;
+}
+select:hover,
+select:active {
+  background-image: linear-gradient(var(--color-gray), var(--color-light-gray));
+}
+::picker(select) {
+  border: none;
+  background: none;
+}
+option {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  border: 2px solid var(--color-dark-gray);
+  background: var(--color-gray);
+  padding: 6px 9px;
+  font-size: 13.3333px;
+}
+option:first-of-type {
+  border-radius: 6px 6px 0 0;
+}
+option:last-of-type {
+  border-radius: 0 0 6px 6px;
+}
+option:not(option:first-of-type) {
+  border-top: none;
+}
+option:not(option:last-of-type) {
+  border-bottom: none;
+}
+option:nth-of-type(odd) {
+  background-color: var(--color-alt-gray);
+}
+option:hover,
+option:focus,
+option:checked {
+  background-color: var(--color-light-gray);
+}
+
+
 .imglink img {
   width: 300px;
 }
@@ -211,6 +259,7 @@ li {
 }
 .media p {
   margin-top: 8px;
+  margin-bottom: 0;
 }
 .media table {
   display: block;

@@ -10,17 +10,39 @@ desc: A dump of useless things.
 </div>
 <p>Litonetは僕の作ったものを適当に置いている場所です。</p>
 <h2>作ったもの</h2>
-<div class="flex c" style="gap:10px">
+<style>
+  .flex {
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .media {
+    margin: 0;
+  }
+  .imglink img {
+    transition: transform 0.3s;
+  }
+  .imglink img:hover {
+    transform: scale(1.05);
+  }
+</style>
+<div class="flex c">
   <div class="media">
-    <a class="imglink" href="./translator">
-      <img src="./img/distranslator.svg" alt="Distranslator">
+    <a class="imglink" href="./placeholder">
+      <img src="./img/placeholder.svg" alt="Placeholder">
     </a>
-    <p>Distranslator - 翻訳機もどき</p>
+    <p>Placeholder - ここにテキストを入力</p>
   </div>
   <div class="media">
     <a class="imglink" href="./click-me">
       <img src="./img/click-me.svg" alt="Click Me!">
     </a>
     <p>Click Me! - 今すぐクリック！</p>
+  </div>
+  <div class="media">
+    <a class="imglink" href="./translator">
+      <img src="./img/distranslator.svg" alt="Distranslator">
+    </a>
+    <p>Distranslator - 翻訳機もどき</p>
   </div>
 </div>

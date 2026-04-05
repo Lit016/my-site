@@ -7,20 +7,20 @@
   {% endif %}
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://lit016.github.io/litonet/img/woah.png">
-  <link rel="icon" href="./img/favicon.png">
-  <link rel="stylesheet" href="./source/style.css">
+  <link rel="icon" href="/litonet/img/favicon.png">
+  <link rel="stylesheet" href="/litonet/source/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.1.0/css/all.css">
 </head>
 <body>
   <div class="wrapper">
     <div class="header">
-      <a class="logo" href="./index" title="Litonet">Litonet</a>
+      <a class="logo" href="/litonet/index" title="Litonet">Litonet</a>
     </div>
     <div class="content">
       {{ content }}
     </div>
     <div class="footer">
-      <a class="logo" href="./index" title="Litonet">Litonet</a>
+      <a class="logo" href="/litonet/index" title="Litonet">Litonet</a>
       — <i>A dump of useless things.</i>
       <hr>
       <ul class="yoko">
@@ -32,9 +32,9 @@
       <i class="fa-solid fa-angle-up"></i>
     </button>
   </div>
-  <script src="./source/main.js"></script>
+  <script src="/litonet/source/main.js"></script>
   {% if page.custom_js %}
-  <script src="./js/{{ page.custom_js }}"></script>
+  <script src="/litonet/js/{{ page.custom_js }}"></script>
   {% endif %}
 </body>
 </html>
